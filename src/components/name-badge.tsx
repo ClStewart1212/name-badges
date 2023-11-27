@@ -1,4 +1,8 @@
-const NameBadge = () => {
+type NameBadgeProps = {
+  name: string;
+};
+
+const NameBadge = ({ name }: NameBadgeProps): JSX.Element => {
   return (
     <section className="badge">
       <header className="badge-header">
